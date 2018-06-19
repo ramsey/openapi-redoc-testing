@@ -1,0 +1,14 @@
+title: User
+description: A user.
+type: object
+properties:
+  id:
+    description: The identifier for this user.
+    type: number
+  name:
+    description: The name for this user.
+    type: string
+  email:
+    description: The email address for this user.
+    type: string
+    format: email

@@ -1,0 +1,38 @@
+parameters:
+  - $ref: '../components/parameters/authentication.yaml'
+  - name: id
+    in: path
+    description: The user ID.
+    required: true
+    schema:
+      type: integer
+get:
+  summary: Return user by ID.
+  responses:
+    '200':
+      description: User response.
+      content:
+        application/vnd.example+json:
+          schema:
+            $ref: '../components/schemas/User.yaml'
+put:
+  summary: Update a user.
+  requestBody:
+    required: true
+    description: The updated user.
+    content:
+      application/vnd.example+json:
+        schema:
+          $ref: '../components/schemas/User.yaml'
+  responses:
+    '200':
+      description: The user with updates applied.
+      content:
+        application/vnd.example+json:
+          schema:
+            $ref: '../components/schemas/User.yaml'
+delete:
+  summary: Delete a user.
+  responses:
+    '204':
+      description: The user was successfully deleted.

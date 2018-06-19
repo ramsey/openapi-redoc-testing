@@ -1,0 +1,33 @@
+parameters:
+  - $ref: '../components/parameters/authentication.yaml'
+get:
+  summary: List users.
+  responses:
+    '200':
+      description: User list response.
+      content:
+        application/vnd.example+json:
+          schema:
+            $ref: '../components/schemas/UserCollection.yaml'
+post:
+  summary: Create a user.
+  requestBody:
+    required: true
+    description: The user to create.
+    content:
+      application/vnd.example+json:
+        schema:
+          $ref: '../components/schemas/User.yaml'
+  responses:
+    '201':
+      description: The successfully-created user.
+      headers:
+        Location:
+          description: The URL to the newly-created user.
+          schema:
+            type: string
+            format: uri
+      content:
+        application/vnd.example+json:
+          schema:
+            $ref: '../components/schemas/User.yaml'

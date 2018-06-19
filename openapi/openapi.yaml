@@ -1,0 +1,26 @@
+openapi: 3.0.1
+
+
+info:
+  title: OpenAPI Redoc Testing
+  description: >
+    Just testing something.
+  version: 'v1.0.0'
+
+
+servers:
+  - url: https://api.example.com
+    description: Production
+
+
+components:
+
+  parameters:
+    authentication: {$ref: 'components/parameters/authentication.yaml'}
+
+  schemas:
+    Address: {$ref: 'components/schemas/User.yaml'}
+
+paths:
+  '/user': {$ref: 'paths/user.yaml'}
+  '/user/{id}': {$ref: 'paths/user-id.yaml'}

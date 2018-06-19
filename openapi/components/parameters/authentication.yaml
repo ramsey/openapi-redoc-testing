@@ -1,0 +1,6 @@
+name: Authentication
+in: header
+description: A Bearer authentication token.
+required: true
+schema:
+  type: string

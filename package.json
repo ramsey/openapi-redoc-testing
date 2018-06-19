@@ -1,0 +1,19 @@
+{
+  "name": "openapi-redoc-testing",
+  "description": "Testing resolving references",
+  "version": "0.0.0",
+  "author": "Ben Ramsey <ben@benramsey.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramsey/openapi-redoc-testing"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "speccy": "^0.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

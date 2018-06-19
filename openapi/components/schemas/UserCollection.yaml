@@ -1,0 +1,8 @@
+title: User Collection
+type: object
+properties:
+  items:
+    title: User
+    type: array
+    items:
+      $ref: 'User.yaml'
