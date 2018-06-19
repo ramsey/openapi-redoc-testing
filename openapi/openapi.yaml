@@ -19,7 +19,7 @@ components:
     authentication: {$ref: 'components/parameters/authentication.yaml'}
 
   schemas:
-    Address: {$ref: 'components/schemas/User.yaml'}
+    User: {$ref: 'components/schemas/User.yaml'}
 
 paths:
   '/user': {$ref: 'paths/user.yaml'}
